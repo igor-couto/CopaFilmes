@@ -5,7 +5,7 @@ Ao selecionar os filmes participantes, disputas acontecem entre os filmes basead
 
 ## Backend
 
-O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o framework [.NET Core 3.1](https://dotnet.microsoft.com/). Os testes unitários foram construidos utilizando a biblioteca [XUnit](https://xunit.net/). A interface e documentação da API foram feitas com o [Swagger](https://swagger.io/). O projeto pode ser encontrado na pasta backend nesse mesmo repositório.
+O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o framework [.NET Core 3.1](https://dotnet.microsoft.com/) e ASP.NET Core 3.1. Os testes unitários foram construidos utilizando a biblioteca [XUnit](https://xunit.net/). A interface e documentação da API foram feitas com o [Swagger](https://swagger.io/). O projeto pode ser encontrado na pasta backend nesse mesmo repositório.
 
 ### Como executar
 
@@ -37,9 +37,6 @@ O projeto de frontend foi contruido em [ReactJS](https://reactjs.org) e se encon
 5. Acesse o endereço que irá aparecer no terminal para abrir a aplicação em seu navegador
 
 ## Screenshots
-
-![](preview.png)
-![](preview.png)
 
 ![Seleção de Filmes](https://github.com/igor-couto/CopaFilmes/blob/master/screenshots/screenshot_selecao.png)
 ![Resultado do Campeonato](https://github.com/igor-couto/CopaFilmes/blob/master/screenshots/screenshot_resultado.png)
