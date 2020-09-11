@@ -12,25 +12,12 @@ namespace CopaDeFilmes.Application.Services
     {
         public IPodium CreateChampionship(IEnumerable<Movie> movies)
         {
-            try
-            {
-                if (movies.Count() > 8)
-                    throw new InvalidNumberOfMoviesException();
+            if (movies.Count() > 8)
+                throw new InvalidNumberOfMoviesException();
 
-                var championship = new Championship(movies);
+            var championship = new Championship(movies);
 
-                return championship.Podium;
-            }
-            catch (InvalidNumberOfMoviesException exception)
-            {
-                //return StatusCode(StatusCodes.Status400BadRequest, $"Erro ao gerar campeonato: {exception.Message}");
-                return null;
-            }
-            catch (Exception exception)
-            {
-                //return StatusCode(StatusCodes.Status500InternalServerError, $"Erro ao gerar campeonato: {exception.Message}");
-                return null;
-            }
+            return championship.Podium;
         }
     }
 }
