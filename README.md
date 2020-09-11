@@ -46,5 +46,12 @@ Existem alguns pontos que poderiam ser aperfeiçoados neste sistema.
 
 ## Screenshots
 
-* [Seleção de Filmes](screenshot_selecao.png)
-* [Resultado do Campeonato](screenshot_resultado.png)
+![](preview.png)
+![](preview.png)
+
+![Seleção de Filmes](https://github.com/igor-couto/CopaFilmes/blob/master/screenshots/screenshot_selecao.png)
+![Resultado do Campeonato](https://github.com/igor-couto/CopaFilmes/blob/master/screenshots/screenshot_resultado.png)
+
+## Autor
+
+* **Igor Couto** - [igor.fcouto@gmail.com](mailto:igor.fcouto@gmail.com)
