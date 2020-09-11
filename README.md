@@ -10,7 +10,7 @@ O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o fra
 ### Como executar
 
 1. Garanta que o runtime do .NET Core 3.1 está instalado. Caso não esteja, poderá ser baixado [aqui](https://dotnet.microsoft.com/download)
-2. No terminal, entre na pasta `/backend`
+2. No terminal, entre na pasta `/backend/CopaDeFilmes.API`
 3. Execute o comando de terminal `dotnet rurestore` para instalar as dependências NuGet do projeto
 4. Execute o comando de terminal `dotnet run`
 
@@ -18,9 +18,10 @@ Obs.: Também é possível executar o projeto de backend em um container do [Doc
 
 ### Executando os testes
 
-1. No terminal, entre na pasta `/backend`
-2. Execute o comando de terminal `dotnet rurestore` para instalar as dependências NuGet do projeto
-3. Execute o comando de terminal `dotnet run`
+1. No terminal, entre na pasta `/backend/Tests`
+2. Entre na pasta referênte ao projeto que deseja executar os testes
+3. Execute o comando de terminal `dotnet rurestore` para instalar as dependências NuGet do projeto
+4. Execute o comando de terminal `dotnet run`
 
 ## Frontend
 
