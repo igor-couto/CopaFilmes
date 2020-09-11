@@ -15,7 +15,7 @@ O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o fra
 4. Execute o comando de terminal `dotnet run`
 5. No navegador, acesse o endereço http://localhost:5000/ para conferir se a API está rodando através de sua interface swagger
 
-Obs.: Também é possível executar o projeto de backend em um container do [Docker](https://docker.com) utilizando seu Dockerfile localizado em `/backend/CopaDeFilmes.API/Dockerfile`
+Obs.: Também é possível executar o projeto de backend em um container do [Docker](https://docker.com) utilizando seu Dockerfile localizado em `/backend/CopaDeFilmes.API/Dockerfile`. Porém será necessário ajustar o endereço da api no frontend alterando o arquivo `frontend/src/api/api.js`.
 
 ### Executando os testes
 
