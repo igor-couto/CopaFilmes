@@ -5,7 +5,7 @@ Ao selecionar os filmes participantes, disputas acontecem entre os filmes basead
 
 ## Backend
 
-O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o framework [.NET Core 3.1](https://dotnet.microsoft.com/). O projeto pode ser encontrado na pasta backend nesse mesmo repositório.
+O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o framework [.NET Core 3.1](https://dotnet.microsoft.com/). Os testes unitários foram construidos utilizando a biblioteca [XUnit](https://xunit.net/). A interface e documentação da API foram feitas com o [Swagger](https://swagger.io/). O projeto pode ser encontrado na pasta backend nesse mesmo repositório.
 
 ### Como executar
 
