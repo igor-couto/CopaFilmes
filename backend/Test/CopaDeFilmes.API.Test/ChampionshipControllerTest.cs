@@ -92,9 +92,9 @@ namespace CopaDeFilmes.API.Test
             var emptyMovies = new List<Movie>();
 
             var result = championshipController.Post(emptyMovies);
-
-            var okResult = result as OkObjectResult;
-            okResult.StatusCode.Should().Be(400);
+            
+            var badRequestResult = result as ObjectResult;
+            badRequestResult.StatusCode.Should().Be(400);
         }
     }
 }

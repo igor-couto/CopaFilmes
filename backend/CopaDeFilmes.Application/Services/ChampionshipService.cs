@@ -11,7 +11,7 @@ namespace CopaDeFilmes.Application.Services
     {
         public IPodium CreateChampionship(IEnumerable<Movie> movies)
         {
-            if (movies.Count() > 8)
+            if (movies.Count() != 8)
                 throw new InvalidNumberOfMoviesException();
 
             var championship = new Championship(movies);
