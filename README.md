@@ -1,4 +1,4 @@
-# Copa do Mundo de Filmes 🏆🎬
+# Copa do Mundo de Filmes 🎬🏆
 
 A copa do mundo de filmes é um sistema web onde o usuário pode realizar competições entre filmes selecionados dentro de uma determinada lista.
 Ao selecionar os filmes participantes, disputas acontecem entre os filmes baseadas em sua nota e um campeão é definido.
@@ -50,6 +50,7 @@ Existem alguns pontos que poderiam ser aperfeiçoados neste sistema.
 - Criar Botão para voltar e realizar um novo campeonato
 - Permitir que mais filmes sejam selecionados ao invés de sempre 8
 - Fazer testes unitários no frontend
+- Utilizar TypeScript no frontend ao invés de JavaScript
 - Testes de interface com alguma ferramenta como Selenium
 
 ## Autor
