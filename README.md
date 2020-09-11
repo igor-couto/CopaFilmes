@@ -47,7 +47,7 @@ Existem alguns pontos que poderiam ser aperfeiçoados neste sistema.
 
 - Implementar uma notificação para o usuário em caso de erro
 - Implementar um componente de loading para mostrar quando o sistema está buscando os filmes ou realizando o campeonato
-- Criar Botão para voltar e realizar um novo campeonato
+- Criar botão para voltar e realizar um novo campeonato
 - Permitir que mais filmes sejam selecionados ao invés de sempre 8
 - Fazer testes unitários no frontend
 - Utilizar TypeScript no frontend ao invés de JavaScript
