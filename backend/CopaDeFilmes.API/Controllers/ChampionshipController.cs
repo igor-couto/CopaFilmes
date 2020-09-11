@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Text.Json;
-using CopaDeFilmes.Application.Services;
 using CopaDeFilmes.Domain.Entities;
 using CopaDeFilmes.Application.Interfaces;
+using CopaDeFilmes.Application.Exceptions;
+using Microsoft.AspNetCore.Http;
+using System;
 
 namespace CopaDeFilmes.API.Controllers
 {
@@ -21,16 +23,28 @@ namespace CopaDeFilmes.API.Controllers
         [HttpPost()]
         public IActionResult Post([FromBody] IEnumerable<Movie> movies)
         {
-            var podium = _championshipService.CreateChampionship(movies);
-
-            var options = new JsonSerializerOptions
+            try 
             {
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-            };
+                var podium = _championshipService.CreateChampionship(movies);
 
-            var result = JsonSerializer.Serialize(podium.Finalists, options);
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                };
 
-            return Ok(result);
+                var result = JsonSerializer.Serialize(podium.Finalists, options);
+
+                return Ok(result);
+            }
+            catch (InvalidNumberOfMoviesException exception)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, $"Error generating championship: {exception.Message}");
+            }
+            catch (Exception exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error generating championship: {exception.Message}");
+            }
+
         }
     }
 }
