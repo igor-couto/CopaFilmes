@@ -1,4 +1,5 @@
 ﻿using CopaDeFilmes.API.Controllers;
+using CopaDeFilmes.Application.Services;
 using CopaDeFilmes.Domain.Entities;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
@@ -75,7 +76,7 @@ namespace CopaDeFilmes.API.Test
         [Fact]
         public void Post_ShouldReturnOK()
         {
-            var championshipController = new ChampionshipController();
+            var championshipController = new ChampionshipController(new ChampionshipService());
 
             var result = championshipController.Post(movies);
 
@@ -86,7 +87,7 @@ namespace CopaDeFilmes.API.Test
         [Fact]
         public void Post_ShouldReturnBadRequest()
         {
-            var championshipController = new ChampionshipController();
+            var championshipController = new ChampionshipController(new ChampionshipService());
 
             var emptyMovies = new List<Movie>();
 
