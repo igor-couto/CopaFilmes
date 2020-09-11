@@ -3,27 +3,27 @@
 A copa do mundo de filmes é um sistema web onde o usuário pode realizar competições entre filmes selecionados dentro de uma determinada lista.
 Ao selecionar os filmes participantes, disputas acontecem entre os filmes baseadas em sua nota e um campeão é definido.
 
-# Backend
+## Backend
 
 O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o framework .NET Core 3.1. O projeto pode ser encontrado na pasta backend nesse mesmo repositório.
 
-## Como executar
+### Como executar
 
 1. Entre na pasta `/backend`
 2. Execute o comando de terminal `dotnet rurestore` para instalar as dependências NuGet do projeto
 3. Execute o comando de terminal `dotnet run`
 
-## Executando os testes
+### Executando os testes
 
 1. Entre na pasta `/backend`
 2. Execute o comando de terminal `dotnet rurestore` para instalar as dependências NuGet do projeto
 3. Execute o comando de terminal `dotnet run`
 
-# Frontend
+## Frontend
 
 O projeto de frontend foi contruido em ReactJs e se encontra na pasta backend/ neste mesmo repositório.
 
-## Como executar
+### Como executar
 
 1. Entre na pasta `/frontend`
 2. Execute o comando de terminal `yarn install` para instalar as dependências NPM do projeto
