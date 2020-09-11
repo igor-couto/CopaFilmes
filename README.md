@@ -33,7 +33,7 @@ O projeto de frontend foi contruido em [ReactJS](https://reactjs.org) e se encon
 3. Execute o comando de terminal `yarn start` para iniciar a aplicação
 4. Acesse o endereço que irá aparecer no terminal para abrir a aplicação em seu navegador
 
-# Melhorias
+## Melhorias
 
 Existem alguns pontos que poderiam ser aperfeiçoados neste sistema.
 
