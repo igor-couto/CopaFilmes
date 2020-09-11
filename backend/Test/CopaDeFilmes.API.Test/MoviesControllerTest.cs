@@ -1,4 +1,5 @@
 using CopaDeFilmes.API.Controllers;
+using CopaDeFilmes.Application.Services;
 using CopaDeFilmes.Domain.Interfaces;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
@@ -14,9 +15,9 @@ namespace CopaDeFilmes.API.Test
         [Fact]
         public async Task GetAsync_ShouldReturnMovies()
         {
-            var controller = new MoviesController();
+            var moviesController = new MoviesController(new MovieService());
 
-            var getResult = await controller.GetAsync();
+            var getResult = await moviesController.GetAsync();
             var result = getResult as OkObjectResult;
             var movies = result.Value as IEnumerable<IMovie>;
 
@@ -28,9 +29,9 @@ namespace CopaDeFilmes.API.Test
         [Fact]
         public async Task GetAsync_ShouldReturnMoviesNotEmpty()
         {
-            var controller = new MoviesController();
+            var moviesController = new MoviesController(new MovieService());
 
-            var getResult = await controller.GetAsync();
+            var getResult = await moviesController.GetAsync();
             var result = getResult as OkObjectResult;
             var movies = result.Value as IEnumerable<IMovie>;
 
@@ -43,9 +44,9 @@ namespace CopaDeFilmes.API.Test
         [Fact]
         public async Task GetAsync_ShouldReturnMoviesWithUniqueIds()
         {
-            var controller = new MoviesController();
+            var moviesController = new MoviesController(new MovieService());
 
-            var getResult = await controller.GetAsync();
+            var getResult = await moviesController.GetAsync();
             var result = getResult as OkObjectResult;
             var movies = result.Value as IEnumerable<IMovie>;
 

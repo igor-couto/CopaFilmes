@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using Microsoft.AspNetCore.Http;
-using CopaDeFilmes.Application.Services;
+using CopaDeFilmes.Application.Interfaces;
 
 namespace CopaDeFilmes.API.Controllers
 {
@@ -10,9 +10,9 @@ namespace CopaDeFilmes.API.Controllers
     [Route("movies")]
     public class MoviesController : Controller
     {
-        private readonly IMoviesService _moviesService;
+        private readonly IMovieService _moviesService;
 
-        public MoviesController(IMoviesService moviesService)
+        public MoviesController(IMovieService moviesService)
         {
             _moviesService = moviesService;
         }

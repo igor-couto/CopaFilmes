@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\code\copa-filmes\backend\CopaDeFilmes\CopaDeFilmes.API\CopaDeFilmes.API.xml</DocumentationFile>
+    <DocumentationFile>C:\code\copa-filmes\backend\CopaDeFilmes.API\CopaDeFilmes.API.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 
