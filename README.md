@@ -14,7 +14,7 @@ O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o fra
 3. Execute o comando de terminal `dotnet rurestore` para instalar as dependências NuGet do projeto
 4. Execute o comando de terminal `dotnet run`
 
-Obs.: Também é possível executar o projeto de backend em um container do [Docker](https://docker.com) utilizando seu Dockerfile
+Obs.: Também é possível executar o projeto de backend em um container do [Docker](https://docker.com) utilizando seu Dockerfile localizado em `/backend/CopaDeFilmes.API/Dockerfile`
 
 ### Executando os testes
 
