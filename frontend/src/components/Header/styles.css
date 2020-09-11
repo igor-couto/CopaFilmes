@@ -1,0 +1,20 @@
+#container{
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px;
+}
+
+.separator{
+    width: 40px; 
+    height:4px;
+}
+
+#current-screen-title{
+    margin-bottom: 10px;
+}
+
+#information-text{
+    margin: 20px 0 10px 0;
+}

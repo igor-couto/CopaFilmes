@@ -1,0 +1,16 @@
+#btn-new-championship{
+    background-color: #F14D4D;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    border-style: none;
+    outline:none;
+    border-radius: 3px;
+    padding: .6em 1em;
+    cursor: pointer;
+}
+
+#btn-new-championship:hover{
+    background-color: #e44949;
+    box-shadow: 0 0 3px rgba(100, 100, 100, 0.5);
+}

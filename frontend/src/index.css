@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+  background-color: #F2F2F2;
+  color: white;
+  padding: 1% 4%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
