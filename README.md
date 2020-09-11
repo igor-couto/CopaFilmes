@@ -28,7 +28,7 @@ O projeto de frontend foi contruido em [ReactJS](https://reactjs.org) e se encon
 
 ### Como executar
 
-1. Entre na pasta `/frontend`
+1. No terminal, entre na pasta `/frontend`
 2. Execute o comando de terminal `yarn install` para instalar as dependências NPM do projeto
 3. Execute o comando de terminal `yarn start` para iniciar a aplicação
 4. Acesse o endereço que irá aparecer no terminal para abrir a aplicação em seu navegador
