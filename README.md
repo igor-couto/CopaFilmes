@@ -33,7 +33,15 @@ O projeto de frontend foi contruido em [ReactJS](https://reactjs.org) e se encon
 3. Execute o comando de terminal `yarn start` para iniciar a aplicação
 4. Acesse o endereço que irá aparecer no terminal para abrir a aplicação em seu navegador
 
-## Melhorias
+## Screenshots
+
+![](preview.png)
+![](preview.png)
+
+![Seleção de Filmes](https://github.com/igor-couto/CopaFilmes/blob/master/screenshots/screenshot_selecao.png)
+![Resultado do Campeonato](https://github.com/igor-couto/CopaFilmes/blob/master/screenshots/screenshot_resultado.png)
+
+## Possíveis Melhorias
 
 Existem alguns pontos que poderiam ser aperfeiçoados neste sistema.
 
@@ -43,14 +51,6 @@ Existem alguns pontos que poderiam ser aperfeiçoados neste sistema.
 - Permitir que mais filmes sejam selecionados ao invés de sempre 8
 - Fazer testes unitários no frontend
 - Testes de interface com alguma ferramenta como Selenium
-
-## Screenshots
-
-![](preview.png)
-![](preview.png)
-
-![Seleção de Filmes](https://github.com/igor-couto/CopaFilmes/blob/master/screenshots/screenshot_selecao.png)
-![Resultado do Campeonato](https://github.com/igor-couto/CopaFilmes/blob/master/screenshots/screenshot_resultado.png)
 
 ## Autor
 
