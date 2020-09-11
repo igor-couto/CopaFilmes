@@ -20,6 +20,11 @@ namespace CopaDeFilmes.API.Controllers
             _championshipService = championshipService;
         }
 
+        /// <summary>
+        /// Inicia um novo torneio
+        /// </summary>
+        /// <param name="movies">Filmes escolhidos para participar do torneio</param>
+        /// <returns>Retorna os vencedores do torneio</returns>
         [HttpPost()]
         public IActionResult Post([FromBody] IEnumerable<Movie> movies)
         {

@@ -20,5 +20,11 @@
     <ProjectReference Include="..\CopaDeFilmes.Application\CopaDeFilmes.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="CopaDeFilmes.API.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 
 </Project>

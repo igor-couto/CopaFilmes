@@ -17,6 +17,10 @@ namespace CopaDeFilmes.API.Controllers
             _moviesService = moviesService;
         }
 
+        /// <summary>
+        /// Retorna todos os filmes disponíveis para se disputar um torneio
+        /// </summary>
+        /// <returns>Retorna todos os filmes em formato json</returns>
         [HttpGet()]
         public async Task<IActionResult> GetAsync()
         {
