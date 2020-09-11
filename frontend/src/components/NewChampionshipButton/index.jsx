@@ -14,20 +14,21 @@ export default class NewChampionshipButton extends Component{
 
     StartNewChampionship = async () => {
 
-        const response = await fetch(apiURL.championship, {
-            method: "POST", 
-            body: JSON.stringify(this.props.selectedMovies), 
-            headers: { 
-                "Content-type": "application/json; charset=UTF-8"
-            }
-        });
-
-        const responseModels = await response.json();
-
-        this.props.onChampionshipStart(responseModels);
-
-        this.setState({hide: true});
-
+        if(this.props.selectedMovies.length === 8){
+            const response = await fetch(apiURL.championship, {
+                method: "POST", 
+                body: JSON.stringify(this.props.selectedMovies), 
+                headers: { 
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            });
+    
+            const responseModels = await response.json();
+    
+            this.props.onChampionshipStart(responseModels);
+    
+            this.setState({hide: true});
+        }
     };
     
     render() {
