@@ -1,0 +1,27 @@
+name: Tests
+
+on: push
+
+jobs:
+
+  Tests:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: 🛠️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup .NET 3.1 SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 3.1
+
+      - name: 🔬 Unit Testing API
+        run: |
+          cd backend/Test/CopaDeFilmes.API.Test/
+          dotnet test
+
+      - name: 🔬 Unit Testing Domain
+        run: |
+          cd backend/Test/CopaDeFilmes.Domain.Test/
+          dotnet test
