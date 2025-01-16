@@ -3,11 +3,13 @@ name: Tests
 on: push
 
 jobs:
-
   Tests:
-    runs-on: ubuntu-latest
-    steps:
+    name: Run Unit Tests
+    runs-on: ubuntu-20.04
+    env:
+      DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: "true"
 
+    steps:
       - name: 🛠️ Checkout Repository
         uses: actions/checkout@v4
 
@@ -16,12 +18,17 @@ jobs:
         with:
           dotnet-version: 3.1
 
-      - name: 🔬 Unit Testing API
+      - name: 📦 Install Dependencies
         run: |
-          cd backend/Test/CopaDeFilmes.API.Test/
-          dotnet test
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libssl1.1
 
-      - name: 🔬 Unit Testing Domain
+      - name: 📦 Restore Dependencies
         run: |
-          cd backend/Test/CopaDeFilmes.Domain.Test/
-          dotnet test
+          cd backend
+          dotnet restore CopaDeFilmes.sln
+          
+      - name: 🔬 Run Tests
+        run: |
+          cd backend
+          dotnet test CopaDeFilmes.sln

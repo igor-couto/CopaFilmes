@@ -89,8 +89,6 @@ namespace CopaDeFilmes.API
 
             app.UseCors("AllowAnyOrigin");
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthorization();

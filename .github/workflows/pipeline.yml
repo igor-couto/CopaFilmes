@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
     paths-ignore:
       - 'README.md'
       - '.gitignore'
@@ -11,7 +11,9 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
+    env:
+      DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: "true"
     steps:
       - name: 🛠️ Check out repository
         uses: actions/checkout@v4
@@ -20,6 +22,12 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 3.1
+
+      - name: 📦 Installing necessary packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libicu-dev
+          sudo apt-get install -y --no-install-recommends libssl1.1
 
       - name: 📦 Restore dependencies
         run: |
@@ -36,6 +44,8 @@ jobs:
 
     needs: build
     runs-on: self-hosted
+    env:
+      DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: "true"
     permissions:
       contents: read
       packages: write
@@ -48,12 +58,6 @@ jobs:
 
       - name: 🚀 Build and push Docker image for ARM64
         run: |
-          # Move to the folder where the Dockerfile is located.
-          # Adjust if your Dockerfile location is different.
-          cd backend/CopaDeFilmes.API
-
-          # Build & push the image. 
-          # Use '.' as context if your Dockerfile references code outside the API folder.
           docker build \
             --platform linux/arm64 \
             -f Dockerfile \
