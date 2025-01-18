@@ -1,5 +1,9 @@
 # Copa do Mundo de Filmes 🎬🏆
 
+[![Tests](https://github.com/igor-couto/CopaFilmes/actions/workflows/tests.yml/badge.svg)](https://github.com/igor-couto/CopaFilmes/actions/workflows/tests.yml)
+[![Frontend Deployment](https://github.com/igor-couto/CopaFilmes/actions/workflows/frontend-pipeline.yml/badge.svg)](https://github.com/igor-couto/CopaFilmes/actions/workflows/frontend-pipeline.yml)
+[![Backend Deployment](https://github.com/igor-couto/CopaFilmes/actions/workflows/backend-pipeline.yml/badge.svg)](https://github.com/igor-couto/CopaFilmes/actions/workflows/backend-pipeline.yml)
+
 A Copa do Mundo de Filmes é um sistema web onde o usuário pode realizar competições entre filmes selecionados dentro de uma determinada lista. Ao selecionar os filmes participantes, disputas acontecem entre eles baseadas em suas notas, e um campeão é definido.
 
 ## Backend
