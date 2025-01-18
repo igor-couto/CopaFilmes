@@ -28,7 +28,7 @@ jobs:
           docker build \
             -t ghcr.io/igorcouto/copa-de-filmes-frontend:latest \
             --platform=linux/arm64 \
-            -f Dockerfile \
+            -f frontend/Dockerfile \
             .
             docker push ghcr.io/igorcouto/copa-de-filmes-frontend:latest
 
