@@ -1,5 +1,4 @@
 using CopaDeFilmes.Domain.Entities;
-using System;
 using Xunit;
 
 namespace CopaDeFilmes.Domain.Test
