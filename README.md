@@ -1,11 +1,10 @@
 # Copa do Mundo de Filmes 🎬🏆
 
-A copa do mundo de filmes é um sistema web onde o usuário pode realizar competições entre filmes selecionados dentro de uma determinada lista.
-Ao selecionar os filmes participantes, disputas acontecem entre os filmes baseadas em sua nota e um campeão é definido.
+A Copa do Mundo de Filmes é um sistema web onde o usuário pode realizar competições entre filmes selecionados dentro de uma determinada lista. Ao selecionar os filmes participantes, disputas acontecem entre eles baseadas em suas notas, e um campeão é definido.
 
 ## Backend
 
-O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o framework [.NET Core 3.1](https://dotnet.microsoft.com/) e ASP.NET Core 3.1. Os testes unitários foram construidos utilizando a biblioteca [XUnit](https://xunit.net/) e [FluentAssertions](https://fluentassertions.com/). A interface e documentação da API foram feitas com o [Swagger](https://swagger.io/). O projeto pode ser encontrado na pasta backend nesse mesmo repositório.
+O projeto de backend consiste em uma Web API desenvolvida utilizado C# com o framework [.NET Core 3.1](https://dotnet.microsoft.com/) e ASP.NET Core 3.1. Os testes unitários foram construidos utilizando a biblioteca [XUnit](https://xunit.net/), [Moq](https://github.com/devlooped/moq) e [FluentAssertions](https://fluentassertions.com/). A interface e documentação da API foram feitas com o [Swagger](https://swagger.io/). O projeto pode ser encontrado na pasta backend nesse mesmo repositório.
 
 ### Como executar
 
@@ -20,7 +19,7 @@ Obs.: Também é possível executar o projeto de backend em um container do [Doc
 ### Executando os testes
 
 1. No terminal, entre na pasta `/backend/Tests`
-2. Entre na pasta referênte ao projeto que deseja executar os testes
+2. Entre na pasta referente ao projeto que deseja executar os testes
 3. Execute o comando de terminal `dotnet restore` para instalar as dependências NuGet do projeto
 4. Execute o comando de terminal `dotnet run`
 
@@ -31,7 +30,7 @@ O projeto de frontend foi contruido em [ReactJS](https://reactjs.org) e se encon
 ### Como executar
 
 1. Garanta que o Node.js está instalado. Você pode usar o comando `node -v` para verificar. Ele pode ser baixado [aqui](https://nodejs.org/pt-br/download/) 
-2. No terminal, entre na pasta `/frontend`
+2. No terminal, navegue até a pasta `/frontend`
 3. Execute o comando de terminal `yarn install` para instalar as dependências NPM do projeto
 4. Execute o comando de terminal `yarn start` para iniciar a aplicação
 5. Acesse o endereço que irá aparecer no terminal para abrir a aplicação em seu navegador
@@ -47,7 +46,7 @@ Existem alguns pontos que poderiam ser aperfeiçoados neste sistema.
 
 - Implementar uma notificação para o usuário em caso de erro
 - Implementar um componente de loading para mostrar quando o sistema está buscando os filmes ou realizando o campeonato
-- Criar botão para voltar e realizar um novo campeonato
+- Criar um botão para voltar e realizar um novo campeonato
 - Permitir que mais filmes sejam selecionados ao invés de sempre 8
 - Fazer testes unitários no frontend
 - Utilizar TypeScript no frontend ao invés de JavaScript
