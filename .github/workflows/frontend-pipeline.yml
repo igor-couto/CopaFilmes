@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     name: Build (React)
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: 🛠️ Check out repository
         uses: actions/checkout@v4
@@ -55,13 +55,8 @@ jobs:
           SSH_PORT: ${{ secrets.SSH_PORT }}
         run: |
           ssh -p $SSH_PORT $SSH_USER@$SSH_HOST "
-            # Pull latest Docker image
             sudo docker pull ghcr.io/igorcouto/copa-de-filmes-frontend:latest
-
-            # Stop old container
             sudo docker rm -f my-frontend-container || true
-
-            # Run new container (NGINX on port 80)
             sudo docker run -d --name my-frontend-container --restart=always -p 80:80 ghcr.io/igorcouto/copa-de-filmes-frontend:latest
           "
         shell: bash
