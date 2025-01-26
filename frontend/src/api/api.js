@@ -1,6 +1,6 @@
 const apiURL = {
-    movies: 'http://localhost:5000/movies',
-    championship: 'http://localhost:5000/championship',
+    movies: 'http://localhost:50060/movies',
+    championship: 'http://localhost:50060/championship',
 }
 
 export {apiURL};
