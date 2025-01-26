@@ -3,10 +3,9 @@ name: Frontend Pipeline
 on:
   push:
     branches: [ "master" ]
-    paths-ignore:
-      - 'README.md'
-      - '.gitignore'
-      - '.githooks/'
+    paths:
+      - '.github/workflows/frontend-pipeline.yml'
+      - 'frontend/**'
 
 jobs:
   build:
@@ -28,7 +27,7 @@ jobs:
           docker build \
             --platform linux/arm64 \
             -f frontend/Dockerfile \
-            -t ghcr.io/igor-couto/copa-de-filmes:latest \
+            -t ghcr.io/igor-couto/copa-de-filmes-frontend:latest \
             --push \
             frontend/
 

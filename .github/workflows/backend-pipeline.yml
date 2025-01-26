@@ -3,10 +3,9 @@ name: Backend Pipeline
 on:
   push:
     branches: [ "master" ]
-    paths-ignore:
-      - 'README.md'
-      - '.gitignore'
-      - '.githooks/'
+    paths:
+      - '.github/workflows/backend-pipeline.yml'
+      - 'backend/**'
 
 jobs:
   build:
