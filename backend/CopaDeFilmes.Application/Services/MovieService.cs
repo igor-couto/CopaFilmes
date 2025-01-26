@@ -9,7 +9,8 @@ namespace CopaDeFilmes.Application.Services
 {
     public class MovieService : IMovieService
     {
-        private const string URL = "http://copafilmes.azurewebsites.net/api/filmes";
+        // private const string URL = "http://copafilmes.azurewebsites.net/api/filmes";
+        private const string URL = "https://movies-api.com/api/movies/random";
 
         public async Task<IEnumerable<Movie>> LoadMoviesAsync()
         {
