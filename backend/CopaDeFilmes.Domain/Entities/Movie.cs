@@ -5,21 +5,21 @@ namespace CopaDeFilmes.Domain.Entities
     public class Movie : IMovie
     {
         public string Id { get; set; }
-        public string Titulo { get; set; }
-        public int Ano { get; set; }
-        public float Nota { get; set; }
+        public string Title { get; set; }
+        public int Year { get; set; }
+        public float Rating { get; set; }
 
         public bool IsBetterThan(IMovie other)
         {
-            if (Nota == other.Nota)
+            if (Rating == other.Rating)
                 return ResolveTie(other);
 
-            return (Nota > other.Nota);
+            return (Rating > other.Rating);
         }
 
         public bool ResolveTie(IMovie other)
         {
-            return string.CompareOrdinal(Titulo.ToLower(), other.Titulo.ToLower()) < 0;
+            return string.CompareOrdinal(Title.ToLower(), other.Title.ToLower()) < 0;
         }
     }
 }

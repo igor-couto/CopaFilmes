@@ -3,9 +3,9 @@
     public interface IMovie
     {
         string Id { get; set; }
-        int Ano { get; set; }
-        float Nota { get; set; }
-        string Titulo { get; set; }
+        int Year { get; set; }
+        float Rating { get; set; }
+        string Title { get; set; }
 
         bool IsBetterThan(IMovie other);
         bool ResolveTie(IMovie other);

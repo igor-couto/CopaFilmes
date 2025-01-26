@@ -14,8 +14,8 @@ namespace CopaDeFilmes.Domain.Test
         [InlineData(float.MinValue, float.MaxValue, false)]
         public void IsBetterThan_ShoudReturnBetterMovieByNota(float betterNota, float worstNota, bool expected)
         {
-            var betterMovie = new Movie { Nota = betterNota };
-            var worstMovie = new Movie { Nota = worstNota };
+            var betterMovie = new Movie { Rating = betterNota };
+            var worstMovie = new Movie { Rating = worstNota };
 
             var actual = betterMovie.IsBetterThan(worstMovie);
 
@@ -33,13 +33,13 @@ namespace CopaDeFilmes.Domain.Test
         {
             var betterMovie = new Movie
             {
-                Nota = 5.0f,
-                Titulo = betterTitle
+                Rating = 5.0f,
+                Title = betterTitle
             };
             var worstMovie = new Movie
             {
-                Nota = 5.0f,
-                Titulo = worstTitle
+                Rating = 5.0f,
+                Title = worstTitle
             };
 
             var actual = betterMovie.ResolveTie(worstMovie);

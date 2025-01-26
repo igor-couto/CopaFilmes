@@ -17,59 +17,59 @@ namespace CopaDeFilmes.API.Test
             new Movie()
             {
                 Id = "tt4154756",
-                Ano = 2018,
-                Nota = 8.8f,
-                Titulo = "Vingadores: Guerra Infinita"
+                Year = 2018,
+                Rating = 8.8f,
+                Title = "Vingadores: Guerra Infinita"
             },
 
             new Movie()
             {
                 Id = "tt3606756",
-                Ano = 2018,
-                Nota = 8.5f,
-                Titulo = "Os Incríveis 2"
+                Year = 2018,
+                Rating = 8.5f,
+                Title = "Os Incríveis 2"
             },
             new Movie()
             {
                 Id = "tt4881806",
-                Ano = 2018,
-                Nota = 6.7f,
-                Titulo = "Jurassic World: Reino Ameaçado"
+                Year = 2018,
+                Rating = 6.7f,
+                Title = "Jurassic World: Reino Ameaçado"
             },
             new Movie()
             {
                 Id = "tt5164214",
-                Ano = 2018,
-                Nota = 6.3f,
-                Titulo = "Oito Mulheres e um Segredo"
+                Year = 2018,
+                Rating = 6.3f,
+                Title = "Oito Mulheres e um Segredo"
             },
             new Movie()
             {
                 Id = "tt7784604",
-                Ano = 2018,
-                Nota = 7.8f,
-                Titulo = "Hereditário"
+                Year = 2018,
+                Rating = 7.8f,
+                Title = "Hereditário"
             },
             new Movie()
             {
                 Id = "tt5463162",
-                Ano = 2018,
-                Nota = 8.1f,
-                Titulo = "Deadpool 2"
+                Year = 2018,
+                Rating = 8.1f,
+                Title = "Deadpool 2"
             },
             new Movie()
             {
                 Id = "tt3778644",
-                Ano = 2018,
-                Nota = 7.2f,
-                Titulo = "Han Solo: Uma História Star Wars"
+                Year = 2018,
+                Rating = 7.2f,
+                Title = "Han Solo: Uma História Star Wars"
             },
             new Movie()
             {
                 Id = "tt3501632",
-                Ano = 2017,
-                Nota = 7.9f,
-                Titulo = "Thor: Ragnarok"
+                Year = 2017,
+                Rating = 7.9f,
+                Title = "Thor: Ragnarok"
             }
         };
 

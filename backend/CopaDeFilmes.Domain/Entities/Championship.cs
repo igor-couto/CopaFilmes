@@ -25,7 +25,7 @@ namespace CopaDeFilmes.Domain.Entities
 
         public void SortMovies()
         {
-            Movies = Movies.OrderBy(movie => movie.Titulo);
+            Movies = Movies.OrderBy(movie => movie.Title);
         }
 
         public void SetPositions()

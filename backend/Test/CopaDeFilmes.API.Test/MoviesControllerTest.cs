@@ -25,11 +25,11 @@ namespace CopaDeFilmes.API.Test
             _moviesController = new MoviesController(_mockMovieService.Object);
             _movies = new List<Movie>
             {
-                new Movie { Id = "32f65e0d-a64a-4c76-8731-4c0934f0ca87", Titulo = "Deadpool 2", Ano = 2018, Nota = 8.2f },
-                new Movie { Id = "77121f67-53b0-4b02-a80a-2bb34950e61b", Titulo = "Han Solo: Uma História Star Wars", Ano = 2018, Nota = 6.3f },
-                new Movie { Id = "b612f92a-a198-4eba-b173-cfd4191611a0", Titulo = "Hereditário", Ano = 2018, Nota = 7.1f },
-                new Movie { Id = "e88bccd8-1c3c-4ceb-a335-6026d57f6a09", Titulo = "Jurassic World: Reino Ameaçado", Ano = 2018, Nota = 4.8f },
-                new Movie { Id = "f64417b0-af3c-4a17-b69c-d6786f632ea9", Titulo = "Oito Mulheres e um Segredo", Ano = 2018, Nota = 7.7f }
+                new Movie { Id = "32f65e0d-a64a-4c76-8731-4c0934f0ca87", Title = "Deadpool 2", Year = 2018, Rating = 8.2f },
+                new Movie { Id = "77121f67-53b0-4b02-a80a-2bb34950e61b", Title = "Han Solo: Uma História Star Wars", Year = 2018, Rating = 6.3f },
+                new Movie { Id = "b612f92a-a198-4eba-b173-cfd4191611a0", Title = "Hereditário", Year = 2018, Rating = 7.1f },
+                new Movie { Id = "e88bccd8-1c3c-4ceb-a335-6026d57f6a09", Title = "Jurassic World: Reino Ameaçado", Year = 2018, Rating = 4.8f },
+                new Movie { Id = "f64417b0-af3c-4a17-b69c-d6786f632ea9", Title = "Oito Mulheres e um Segredo", Year = 2018, Rating = 7.7f }
             };
         }
 

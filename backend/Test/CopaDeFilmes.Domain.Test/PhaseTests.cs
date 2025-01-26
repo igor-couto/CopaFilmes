@@ -14,9 +14,9 @@ namespace CopaDeFilmes.Domain.Test
         {
             var mockMovie = new Mock<IMovie>();
             mockMovie.Setup(m => m.Id).Returns(id);
-            mockMovie.Setup(m => m.Titulo).Returns(titulo);
-            mockMovie.Setup(m => m.Ano).Returns(ano);
-            mockMovie.Setup(m => m.Nota).Returns(nota);
+            mockMovie.Setup(m => m.Title).Returns(titulo);
+            mockMovie.Setup(m => m.Year).Returns(ano);
+            mockMovie.Setup(m => m.Rating).Returns(nota);
             return mockMovie.Object;
         }
 
@@ -56,7 +56,7 @@ namespace CopaDeFilmes.Domain.Test
 
             for (var i = 0; i < phase.Winners.Count; i++)
             {
-                phase.Winners[i].Nota.Should().BeGreaterThan(movies[2 * i].Nota, "Winner should have a higher Nota than the opponent");
+                phase.Winners[i].Rating.Should().BeGreaterThan(movies[2 * i].Rating, "Winner should have a higher Nota than the opponent");
             }
         }
 
@@ -110,7 +110,7 @@ namespace CopaDeFilmes.Domain.Test
 
             for (var i = 0; i < phase.Winners.Count; i++)
             {
-                phase.Winners[i].Nota.Should().BeGreaterThan(movies[2 * i].Nota, "Winner should have a higher Nota than the opponent");
+                phase.Winners[i].Rating.Should().BeGreaterThan(movies[2 * i].Rating, "Winner should have a higher Nota than the opponent");
             }
         }
 
