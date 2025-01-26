@@ -69,7 +69,7 @@ jobs:
             sudo docker run -d \
               --name copa-de-filmes-frontend \
               --restart=always \
-              -p 50060:5000 \
+              -p 50061:5000 \
               ghcr.io/igor-couto/copa-de-filmes-frontend:latest
           "
         shell: bash
