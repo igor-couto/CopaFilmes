@@ -1,7 +1,7 @@
-FROM --platform=linux/arm64 node:14 AS build
+FROM --platform=linux/arm64 node:12 AS build
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm ci --unsafe-perm --prefer-offline --no-audit
 COPY . .
 RUN npm run build
 
