@@ -1,6 +1,6 @@
 const apiURL = {
-    movies: 'https://movies-api.com/api/movies/random',
-    championship: 'http://localhost:50060/championship',
+    movies: '/projects/copa-de-filmes/api/movies',
+    championship: 'projects/copa-de-filmes-api/championship',
 }
 
 export {apiURL};

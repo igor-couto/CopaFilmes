@@ -35,8 +35,8 @@ export class MovieCard extends Component {
                 </div>
                 
                 <div>
-                    <div className="movie-title">{this.state.movie.titulo}</div>
-                    <div className="movie-year">{this.state.movie.ano}</div>
+                    <div className="movie-title">{this.state.movie.title}</div>
+                    <div className="movie-year">{this.state.movie.year}</div>
                 </div>
                 
             </div>

@@ -15,8 +15,8 @@ export class WinnerCard extends Component {
                 </div>
                 
                 <div className="winner-movie-info">
-                    <div className="winner-movie-title">{this.props.movie.titulo}</div>
-                    <div className="winner-movie-year">{this.props.movie.ano}</div>
+                    <div className="winner-movie-title">{this.props.movie.title}</div>
+                    <div className="winner-movie-year">{this.props.movie.year}</div>
                 </div>
                 
             </div>
