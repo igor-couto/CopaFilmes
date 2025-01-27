@@ -1,6 +1,6 @@
 const apiURL = {
     movies: '/projects/copa-de-filmes/api/movies',
-    championship: 'projects/copa-de-filmes-api/championship',
+    championship: 'https://igorcouto.com/projects/copa-de-filmes-api/championship',
 }
 
 export {apiURL};
