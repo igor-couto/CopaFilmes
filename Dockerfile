@@ -12,6 +12,6 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 ENV LANG en-US.UTF-8
 ENV LC_ALL en-US.UTF-8
-EXPOSE 5000
+EXPOSE 80
 COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "CopaDeFilmes.API.dll"]
